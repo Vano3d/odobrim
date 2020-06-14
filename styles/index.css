@@ -6,6 +6,8 @@ html {
     font-family: 'Montserrat', sans-serif;
 } 
 
+
+
 .top {
     max-width: 1130px;
     padding: 10px 15px;
@@ -63,12 +65,55 @@ html {
 }
 
 .greenmile::after {
+    content: "";
     position: absolute;
     display: block;
-    transform: translate(-3px, -4px);
+    transform: translate(-3px, 0.05em);
     width: 103%; 
     height: 7px; 
-    content: "";
     background-color:  #56FC21;
     border-radius: 7px;
+}
+
+.choose {
+    max-width: 1130px;
+    padding: 64px 0;
+ 
+    margin: 0 auto;
+}
+
+.choose__cards {
+    padding: 0;
+    list-style-type: none;
+}
+.choose__title {
+    text-align: center;
+}
+.choose__item {
+    margin-top: 48px;
+    width: 528px;
+    height: 188px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    background-color: #E4F9DD;
+    border-radius: 4px;
+}
+.choose__card-left {
+    padding: 28px 0 24px 24px;
+}
+
+.choose__button {
+    width: 168px;
+    height: 44px;
+    background: #47D31A;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    
+    border: 0;
 }
