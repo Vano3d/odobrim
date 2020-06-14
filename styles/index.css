@@ -78,33 +78,70 @@ html {
 .choose {
     max-width: 1130px;
     padding: 64px 0;
- 
     margin: 0 auto;
-}
+  }
 
 .choose__cards {
+    
     padding: 0;
     list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 18px 48px;
+    justify-items: center;
+    
+    margin-top: 48px;
+    
 }
 .choose__title {
-    text-align: center;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.23;
+    color: #333;
+    display: block;
+    margin: 0 auto;
+    max-width: 25%;
+    border: 1px solid green;
+
 }
 .choose__item {
-    margin-top: 48px;
+
     width: 528px;
     height: 188px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
     background-color: #E4F9DD;
     border-radius: 4px;
 }
 .choose__card-left {
-    padding: 28px 0 24px 24px;
+    align-self: flex-start;
+    padding: 27px 0 24px 24px;
+}
+
+.choose__header {
+    margin: 0;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 21px;
+    color: #333;
+}
+
+.choose__subheader {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.24;
+    color: #979797;
+    margin: 9px 0 0 0;
+}
+
+.choose__card-right {
+    width: 240px;
+    height: 188px;
 }
 
 .choose__button {
+    margin-top: 44px;
     width: 168px;
     height: 44px;
     background: #47D31A;
@@ -114,6 +151,5 @@ html {
     line-height: 18px;
     text-align: center;
     color: #FFFFFF;
-    
     border: 0;
 }
