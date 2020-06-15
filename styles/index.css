@@ -90,14 +90,14 @@ html {
     padding: 0;
     list-style-type: none;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat( auto-fit, minmax(100%, 1fr) );
     grid-gap: 18px 48px;
     justify-items: center;
     
     margin-top: 48px;
     
 }
-.choose__title {
+.section__title {
     font-weight: 800;
     font-size: 26px;
     line-height: 1.23;
@@ -153,5 +153,5 @@ html {
     line-height: 18px;
     text-align: center;
     color: #FFFFFF;
-    border: 0;
+    border: 1;
 }
