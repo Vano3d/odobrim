@@ -7,6 +7,9 @@ html {
 } 
 
 
+.main {
+    /* padding: 0 15px 0; */
+}
 
 .top {
     max-width: 1130px;
@@ -17,7 +20,7 @@ html {
 
 .header {
     width: 100%;
-    max-height: 308px;
+    height: 308px;
     background-color: #EDEDEF;
     margin: 0 auto;
     
@@ -55,7 +58,7 @@ html {
 
 .header__image {
     display: block;
-    width: 444px;
+    /* width: 444px; */
     height: 308px;
     object-fit: contain;
   
@@ -80,7 +83,7 @@ html {
 }
 
 .choose {
-    max-width: 1130px;
+    max-width: 1104px;
     padding: 64px 0;
     margin: 0 auto;
   }
@@ -90,11 +93,11 @@ html {
     padding: 0;
     list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(528px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min-content, 528px));
     grid-gap: 18px 48px;
     justify-items: center;
-    
     margin-top: 48px;
+    justify-content: center;
     
 }
 .section__title {
@@ -108,7 +111,7 @@ html {
 }
 .choose__item {
 
-    width: 528px;
+    width: 100%;
     height: 188px;
     display: flex;
     justify-content: space-between;
@@ -140,6 +143,7 @@ html {
 .choose__card-right {
     width: 240px;
     height: 188px;
+    padding-left: 15px;
 }
 
 .choose__button {
@@ -154,4 +158,118 @@ html {
     text-align: center;
     color: #FFFFFF;
     border: 0;
+}
+
+.getmoney {
+    background-color: #F3F3F3;
+    padding: 64px 0;
+}
+
+.getmoney__block {
+
+    max-width: 1104px;
+    margin: 0 auto;
+}
+
+.getmoney__items {
+    background-color: #fff;;
+  
+    margin: 0 auto;
+    margin-top: 48px;
+    padding: 48px 56px 64px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+    border-radius: 20px;
+ 
+}
+
+.getmoney__item {
+    position: relative;
+   
+}
+.getmoney__item:not(:last-child):after {
+    position: absolute;
+    content: "";
+    left: 100%;
+    top: 23%;
+    width: 200px;
+    height: 2px;
+    background: #E0E0E0 no-repeat;
+}
+
+
+.getmoney__icon {
+    width: 70px;
+    height: 70px;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 1.2;
+    background-color: #F3F3F3;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+
+
+.getmoney_icon_one::after {
+    position: absolute;
+    content: "";
+    right: -5px;
+    top: -5px;
+    width: 43px;
+    height: 68px;
+    background: url(../images/point_one.svg) no-repeat;
+}
+
+.getmoney_icon_two::after {
+    position: absolute;
+    content: "";
+    right: -12px;
+    top: -5px;
+    width: 81px;
+    height: 81px;
+    background: url(../images/point_two.svg) no-repeat;
+    
+}
+
+.getmoney_icon_three::after {
+    position: absolute;
+    content: "";
+    right: -6px;
+    top: -5px;
+    width: 81px;
+    height: 81px;
+    background: url(../images/point_three.svg) no-repeat;
+    
+}
+
+.getmoney__header {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 1.24;
+}
+
+.getmoney__subheader {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #979797;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .getmoney__item:not(:last-child):after {
+     
+        width: calc(100vw/7);
+       
+        
+    }
+
 }
