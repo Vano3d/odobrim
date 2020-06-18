@@ -101,6 +101,7 @@ html {
     
 }
 .section__title {
+    margin: 0;
     font-weight: 800;
     font-size: 26px;
     line-height: 1.23;
@@ -295,7 +296,7 @@ html {
 
 .getmoney__header {
     font-weight: bold;
-    font-size: 17px;
+    font-size: 17px; 
     line-height: 1.24;
 }
 
@@ -315,4 +316,61 @@ html {
         
     }
 
+}
+
+
+.slider {
+    background-color: #F3F3F3;
+    padding: 0 0 64px;
+    width: 100%;
+}
+
+.slider__items {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1104px;
+    margin: 0 auto;
+    margin-top: 48px;
+    padding: 0;
+    list-style-type: none;
+    
+}
+
+.slider__item {
+    display: flex;
+    justify-content: space-between;
+    max-width: 336px;
+    height: 155px;
+    background-color: #fff;
+    /* padding: 20px 24px 29px; */
+    border-radius: 8px;
+   
+}
+
+.slider__facts {
+    align-self: flex-end;
+    padding: 0 0 29px 24px;
+}
+
+.slider__amount {
+    margin: 0;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.2;
+    color: #47D31A;
+    padding: 
+   
+}
+
+.slider__sub {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.3;
+    margin: 3px 0 0 ;
+}
+
+.slider__icon {
+    width: 48px;
+    height: 32px;
+    padding: 20px 24px 0 0;
 }
