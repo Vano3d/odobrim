@@ -188,6 +188,8 @@ html {
 
 .getmoney__item {
     position: relative;
+    min-width: 228px;
+  
    
 }
 .getmoney__item:not(:last-child):after {
@@ -218,7 +220,7 @@ html {
 }
 
 
-.getmoney_icon_one::after {
+/* .getmoney_icon_one::after {
     position: absolute;
     content: "";
     right: -5px;
@@ -226,29 +228,80 @@ html {
     width: 43px;
     height: 68px;
     background: url(../images/point_one.svg) no-repeat;
+} */
+
+@keyframes dash-one {
+    from {
+      stroke-dashoffset: 270;
+    }
+    to {
+        stroke-dashoffset: 540;
+      }
+  }
+
+  @keyframes dash-two {
+    from {
+      stroke-dashoffset: 270;
+    }
+    to {
+        stroke-dashoffset: 540;
+      }
+  }
+
+
+.getmoney_icon_one {
+    position: absolute;
+    right: 45px;
+    top: -6px;
+    z-index: 10;
+    width: 75px;
+    height: 75px;
+    stroke-dasharray: 275;
+    animation: dash-one 1.5s ease forwards;
+    stroke-width: 5px;
+    stroke: #47D31A;
+    
+    stroke-linecap: round;
 }
 
-.getmoney_icon_two::after {
-    position: absolute;
-    content: "";
-    right: -12px;
-    top: -5px;
-    width: 81px;
-    height: 81px;
-    background: url(../images/point_two.svg) no-repeat;
-    
+
+.getmoney_icon_two {
+        position: absolute;
+        right: 74px;
+        top: -6px;
+        width: 75px;
+        height: 75px;
+        stroke-dasharray: 270;
+        animation: dash-two 2s 1.2s ease backwards;
+        stroke-width: 5px;
+        stroke: #47D31A;
+       
+        stroke-linecap: round;
 }
 
-.getmoney_icon_three::after {
+@keyframes dash-three {
+    from {
+      stroke-dashoffset: 350;
+    }
+    to {
+        stroke-dashoffset: 50;
+      }
+  }
+
+.getmoney_icon_three {
     position: absolute;
-    content: "";
-    right: -6px;
+    right: 74px;
     top: -5px;
-    width: 81px;
-    height: 81px;
-    background: url(../images/point_three.svg) no-repeat;
-    
+    width: 80px;
+    height: 80px;
+    stroke-dasharray: 350;
+    animation: dash-three 2s 3.2s ease backwards;
+    stroke-width: 5px;
+    stroke: #47D31A;
+   
+    stroke-linecap: round;
 }
+
 
 .getmoney__header {
     font-weight: bold;
