@@ -220,16 +220,6 @@ html {
 }
 
 
-/* .getmoney_icon_one::after {
-    position: absolute;
-    content: "";
-    right: -5px;
-    top: -5px;
-    width: 43px;
-    height: 68px;
-    background: url(../images/point_one.svg) no-repeat;
-} */
-
 @keyframes dash-one {
     from {
       stroke-dashoffset: 270;
@@ -284,18 +274,18 @@ html {
       stroke-dashoffset: 350;
     }
     to {
-        stroke-dashoffset: 50;
+        stroke-dashoffset: 700;
       }
   }
 
 .getmoney_icon_three {
     position: absolute;
-    right: 74px;
+    right: 72px;
     top: -5px;
-    width: 80px;
-    height: 80px;
+    width: 82px;
+    height: 82px;
     stroke-dasharray: 350;
-    animation: dash-three 2s 3.2s ease backwards;
+    animation: dash-three 2.2s 2.5s ease backwards;
     stroke-width: 5px;
     stroke: #47D31A;
    
