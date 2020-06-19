@@ -126,12 +126,12 @@ html {
 
 .choose__item:hover {
     box-shadow: 0 6px 16px 0 rgba(0,0,0,0.16);
-    transform: translateY(-3px);
-    background-color: #47D31A;
+    transform: translateY(-2px);
+    /* background-color: #47D31A; */
     
 }
 
-.choose__item:hover .choose__button  {
+/* .choose__item:hover .choose__button  {
     
     background: #fff;
     color: #004fe4;
@@ -146,7 +146,7 @@ html {
 .choose__item:hover .choose__subheader  {
     color: #fff;
     
- }
+ } */
 
 .choose__card-left {
     align-self: flex-start;
