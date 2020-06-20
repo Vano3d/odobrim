@@ -9,19 +9,20 @@
 }
   .owl-carousel .owl-stage {
     width: 1104px;
-    
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min-content, 144px));
-    
-    column-gap: 43px;
-    /* display: flex;
-    justify-content: space-between; */
+    grid-auto-flow: column;
+    column-gap: 48px;
     position: relative;
     -ms-touch-action: pan-Y;
     touch-action: manipulation;
     -moz-backface-visibility: hidden;
-    /* fix firefox animation glitch */ 
-    
+     
+  }
+
+  .owl-carousel-first .owl-stage {
+    display: flex;
+    justify-content: space-between;
+   
   }
 
   .owl-carousel .owl-stage:after {
@@ -35,11 +36,17 @@
   .owl-carousel .owl-stage-outer {
     position: relative;
     overflow: hidden;
-    
 
-    /* fix for flashing background */
     -webkit-transform: translate3d(0px, 0px, 0px); }
-  .owl-carousel .owl-wrapper,
+
+  .owl-carousel-first .owl-stage-outer {
+      position: relative;
+      overflow: hidden;
+  
+      -webkit-transform: translate3d(0px, 0px, 0px); }
+ 
+ 
+    .owl-carousel .owl-wrapper,
   .owl-carousel .owl-item {
     
     -webkit-backface-visibility: hidden;
@@ -57,15 +64,26 @@
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none; 
   }
+
+  .owl-carousel-first .owl-item {
+    max-width: 336px;
+
+  }
+
   .owl-carousel .owl-item img {
-    /* margin-top: 24px;
-    width: 48px;
-    height: 48px; */
+
    
   }
   .owl-carousel .owl-nav.disabled,
   .owl-carousel .owl-dots.disabled {
-    display: none; }
+    display: none; 
+  }
+
+  .owl-carousel-first .owl-nav.disabled,
+  .owl-carousel-first .owl-dots.disabled {
+    display: none; 
+  }
+
   .owl-carousel .owl-nav .owl-prev,
   .owl-carousel .owl-nav .owl-next,
   .owl-carousel .owl-dot {
@@ -105,7 +123,9 @@
   .owl-carousel.owl-rtl {
     direction: rtl; }
   .owl-carousel.owl-rtl .owl-item {
-    float: right; }
+    float: right; 
+  
+  }
 
 /* No Js */
 .no-js .owl-carousel {
@@ -146,10 +166,10 @@
  * 	Owl Carousel - Lazy Load Plugin
  */
 .owl-carousel .owl-item {
-  /**
-			This is introduced due to a bug in IE11 where lazy loading combined with autoheight plugin causes a wrong
-			calculation of the height of the owl-item that breaks page layouts
-		 */ }
+
+  /* Перенёс в свои стили */
+    
+}
   .owl-carousel .owl-item .owl-lazy {
     opacity: 0;
     transition: opacity 400ms ease; }
@@ -203,3 +223,9 @@
   z-index: 1;
   height: 100%;
   width: 100%; }
+
+  .owl-carousel-first .owl-video-frame {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%; }
