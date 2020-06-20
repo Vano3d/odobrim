@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кредиты на любые цели</title>
     <link rel="stylesheet" href="./styles/index.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" href="./vendor/owlcarousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="./vendor/owlcarousel/assets/owl.theme.default.css">
     <script src="js/wow.min.js"></script>
     <script>new WOW().init();</script>
+    <script src="./vendor/owlcarousel/jquery.min.js"></script>
+    <script src="./vendor/owlcarousel/owl.carousel.min.js"></script>
 </head>
 <body>
 
@@ -178,35 +181,45 @@
                  </li>
             </ul>
         </section>
+        
+
         <section class="partners">
             <h2 class="section__title"><span class="greenmile">Партнёры</span>&nbsp;Одобрим.ру</h2>
-            <ul class="parners__slider">
-                <li class="partners__item">
-                    <img src="./images/partners__1.png" alt="Альфабанк" class="partners__card">
+          
+            <div class="row">
+              <div class="large-12 columns">
+                <div class="owl-carousel owl-theme parners__slider">
+                  <div class="partners__item">
+                    <img src="./images/partners__1.png" alt="Альфабанк" class="partners__icon">
                     <p class="partners__text">Альфабанк</p>
-                </li>
-                <li class="partners__item">
-                    <img src="./images/partners__2.png" alt="Тинькофф банк" class="partners__card">
+                  </div>
+                  <div class="partners__item">
+                    <img src="./images/partners__2.png" alt="Тинькофф банк" class="partners__icon">
                     <p class="partners__text">Тинькофф банк</p>
-                </li>
-                <li class="partners__item">
-                    <img src="./images/partners__3.png" alt="Банк Восточный" class="partners__card">
+                  </div>
+                  <div class="partners__item">
+                    <img src="./images/partners__3.png" alt="Банк Восточный" class="partners__icon">
                     <p class="partners__text">Банк Восточный</p>
-                </li>
-                <li class="partners__item">
-                    <img src="./images/partners__4.png" alt="Райффайзен банк" class="partners__card">
+                  </div>
+                  <div class="partners__item">
+                    <img src="./images/partners__4.png" alt="Райффайзен банк" class="partners__icon">
                     <p class="partners__text">Райффайзен банк</p>
-                </li>
-                <li class="partners__item">
-                    <img src="./images/partners__5.png" alt="Росбанк" class="partners__card">
+                  </div>
+                  <div class="partners__item">
+                    <img src="./images/partners__5.png" alt="Росбанк" class="partners__icon">
                     <p class="partners__text">Росбанк</p>
-                </li>
-                <li class="partners__item">
-                    <img src="./images/partners__6.png" alt="ОТП банк" class="partners__card">
+                  </div>
+                  <div class="partners__item">
+                    <img src="./images/partners__6.png" alt="ОТП банк" class="partners__icon">
                     <p class="partners__text">ОТП банк</p>
-                </li>
-            </ul>
-            </section>
+                  </div>
+                  
+                </div>
+
+            </div>
+        </div>
+          </section>
+
             <div class="bottom">
                 <div class="bottom__block"></div>
                 <hr class="bottom_line">
@@ -234,8 +247,38 @@
                 <li class="footer__item">Реквизиты</li>
             </ul>
         </nav>
-
     </footer>
+
+    <script>
+        $(document).ready(function() {
+          $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+              0: {
+                items: 1,
+                nav: true
+              },
+              320: {
+                items: 2,
+                nav: false
+              },
+              768: {
+                items: 4,
+                nav: false
+              },
+              1280: {
+                items: 6,
+                nav: false,
+                loop: true,
+                
+                margin: 0
+              }
+            }
+          })
+        })
+      </script>
 </body>
 </html>
 
