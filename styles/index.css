@@ -3,19 +3,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap');
 
 html {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', "Verdana", sans-serif;
 } 
 
 
 .page {
-    /* padding: 0 15px 0; */
+    
     transition: .3s ease;
 }
 
 .top {
     max-width: 1130px;
     padding: 10px 15px;
- 
     margin: 0 auto;
 }
 
@@ -327,12 +326,11 @@ html {
 .slider {
     background-color: #F3F3F3;
     padding: 0 20px 64px;
-    /* width: 100%; */
+ 
 }
 
 .slider__items {
-    /* display: flex;
-    justify-content: space-between; */
+
     max-width: 1104px;
     margin: 0 auto;
     margin-top: 48px;
@@ -347,7 +345,7 @@ html {
     max-width: 336px;
     height: 155px;
     background-color: #fff;
-    /* padding: 20px 24px 29px; */
+    
     border-radius: 8px;
    
 }
@@ -387,9 +385,6 @@ html {
 
 .parners__slider {
     max-width: 1104px;
-    /* display: flex;
-    justify-content: space-between; */
-    
     margin: 0 auto;
     margin-top: 48px;
     padding: 0;
@@ -443,29 +438,37 @@ html {
 }
 
 .bottom_line {
-    /* height: 1px; */
     border: 1px solid #F3F3F3;
 }
 
 .footer {
-    width: 100%;
+   
     background-color: #F3F3F3;
     padding: 20px 0 20px;
+    width: 100%;
+    
+}
+
+.footer__wrapper {
+    max-width: 1104px;
     margin: 0 auto;
+
 }
 
 .footer__info {
     font-size: 13px;
     line-height: 1.7;
     color: #979797;
-    max-width: 1104px;
-    margin: 0 auto;
+    
+   
+   
 }
 
 .footer__items {
-    margin: 0 auto;
-    max-width: 1104px;
+    
     display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
     font-size: 11px;
@@ -476,12 +479,10 @@ html {
 
 .footer__item {
     padding: 0 14px 0;
-    
     border-right: 1px solid #888;
 }
 
 .footer__item:first-of-type {
-    
     padding-left: 0;
 }
 
@@ -497,11 +498,9 @@ html {
     }
 
     .choose__cards {
-        /* grid-template-columns: repeat(auto-fill, minmax(min-content, 450px)); */
-        grid-template-columns: repeat(2, minmax(465px, 1fr));
-        /* grid-gap: 16px 16px; */
 
-    }
+        grid-template-columns: repeat(2, minmax(465px, 1fr));
+       }
 
 }
 
@@ -510,8 +509,7 @@ html {
 
     .getmoney__block {
         max-width: 975px;
-        
-        
+                
      }
 
      .getmoney__items {
@@ -519,10 +517,9 @@ html {
         margin-top: 24px;
         padding: 40px 40px 40px;
         
-     } 
+    } 
 
     .getmoney__header {
-   
         font-size: 16px; 
  
     }
@@ -532,8 +529,7 @@ html {
     }
 
     .choose__cards {
-        /* grid-template-columns: repeat(auto-fill, minmax(min-content, 450px)); */
-        /* grid-template-columns: repeat(2, minmax(465px, 1fr)); */
+
         grid-gap: 16px 16px;
 
     }
@@ -541,7 +537,7 @@ html {
     .slider__item {
 
         max-width: 280px;
-}
+    }
 
 @media screen and (max-width: 768px) {
     
@@ -551,8 +547,8 @@ html {
     }
     .header__title {
         font-size: 34px;
- 
     }
+
     .header__subtitle {
         font-size: 13px;
         
@@ -599,7 +595,7 @@ html {
 
  
     .choose__cards {
-        grid-template-columns: repeat(2, minmax(361px, 1fr));
+        grid-template-columns: repeat(2, minmax(360px, 1fr));
         grid-gap: 16px 16px;
     }
     
@@ -675,24 +671,21 @@ html {
         top: -4px;
         width: 54px;
         height: 54px;
-       
- }
+    }
 
     .getmoney_icon_two {
         right: 72px;
         top: -4px;
         width: 54px;
         height: 54px;
-       
- }
+    }
 
     .getmoney_icon_three {
         right: 56px;
         top: -4px;
         width: 59px;
         height: 59px;
-       
-     }
+    }
 
 }
 
@@ -708,7 +701,6 @@ html {
         flex-direction: column;
         align-items: flex-start;        
         padding: 36px 0 36px 16px;
-        /* margin: 0; */
      
     }
 
@@ -751,6 +743,49 @@ html {
         top: 60px;
         left: 25px;
     }
+}
+
+
+@media screen and (max-width: 576px) {
+    
+    .header__title {
+        font-size: 30px;
+    }
+    
+    .choose__cards {
+        grid-template-columns: 382px;
+        grid-gap: 16px;
+    }
+    
+    .choose__item {
+        max-width: 382px;
+        height: 144px;
+    }
+   
+    .getmoney__block {
+        max-width: 388px;
+        
+    }
+    
+
+}
+
+@media screen and (max-width: 414px) {
+    .header__title {
+        font-size: 24px;
+    } 
+
+}
+
+@media screen and (max-width: 375px) {
+
+}
+
+@media screen and (max-width: 360px) {
+
+}
+
+@media screen and (max-width: 320px) {
 
 }
 
