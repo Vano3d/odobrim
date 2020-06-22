@@ -6,11 +6,6 @@ html {
     font-family: 'Montserrat', "Verdana", sans-serif;
 } 
 
-/* 
-.page {
-    
-    
-} */
 
 .top {
     max-width: 1130px;
@@ -194,9 +189,7 @@ html {
 
 }
 
-/* .choose__item button {
-    outline: none;
-} */
+
 
 
 .choose__button:hover {
