@@ -35,7 +35,6 @@ html {
     margin: 0 auto;
 }
 .header__text {
-   
     align-self: flex-start;
     margin-top: 52px;
 }
@@ -58,12 +57,13 @@ html {
 
 .header__image {
     max-height: 308px;
-     
+    display: block;
+    object-fit: cover;
 }
 
 
 .greenmile {
- 
+    
     position: relative;
     z-index: 1;
 }
@@ -78,6 +78,7 @@ html {
     background-color:  #56FC21;
     border-radius: 7px;
     z-index: -1;
+    
 }
 
 .choose {
@@ -100,6 +101,7 @@ html {
 
 .section__title {
     margin: 0;
+    
     font-weight: 800;
     font-size: 26px;
     line-height: 1.23;
@@ -107,6 +109,9 @@ html {
     position: relative;
     display: flex;
     justify-content: center;
+  
+    
+    
 }
 
 .choose__item {
@@ -543,7 +548,9 @@ html {
     
     .header {
         height: 213px;
-        
+    }
+    .header__text {
+        margin-top: 32px;
     }
     .header__title {
         font-size: 34px;
@@ -555,11 +562,16 @@ html {
     }
     .header__image {
         height: 211px;
-      
+        
     }
     .partners__item {
         width: 160px;
         height: 152px;
+    }
+
+    .slider {
+        padding: 0 16px 36px;
+     
     }
 
     .slider__item {
@@ -567,18 +579,17 @@ html {
     }
 
     .slider__facts {
-        align-self: flex-end;
+
         padding: 0 0 18px 20px;
     }
 
     .slider__amount {
 
-        font-size: 28px;
+        font-size: 30px;
 
     }
     
     .slider__sub {
-        font-weight: 500;
         margin: 4px 0 0 ;
     }
 
@@ -590,7 +601,24 @@ html {
 
     .section__title {
         font-size: 20px;
-       
+        
+    }
+
+    .section__title_slider {
+        line-height: 1.4;
+        max-width: 339px;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        
+    }
+
+    .greenmile_slider::after {
+        transform: translate(16px, -4px);
+        width: 90%; 
+        height: 7px; 
+        position: relative;
+        z-index: 2;
     }
 
  
@@ -618,8 +646,7 @@ html {
     }
      
     .choose__card-right {
-       
-        height: 144px;
+       height: 144px;
     }
      
     .choose__button {
@@ -748,6 +775,10 @@ html {
 
 @media screen and (max-width: 576px) {
     
+    .header__text {
+        margin-top: 24px;
+    }
+
     .header__title {
         font-size: 30px;
     }
@@ -767,6 +798,19 @@ html {
         
     }
     
+    .slider__item {
+        width: 260px;
+    }
+
+     .slider__amount {
+        font-size: 28px;
+    }
+    
+    .slider__icon {
+        width: 36px;
+        height: 24px;
+        padding: 20px 20px 0 0;
+    }
 
 }
 
@@ -783,9 +827,32 @@ html {
 
 @media screen and (max-width: 360px) {
 
+    .slider {
+        padding: 0 14px 36px;
+    }
+    .section__title_slider {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .greenmile_slider::after {
+        transform: translate(13px, -4px);
+        width: 90%; 
+    }
+
 }
 
 @media screen and (max-width: 320px) {
+    .header__image {
+        display: none;
+    }
+
+    .greenmile_slider::after {
+        width: 101%; 
+        transform: translate(-2px, -4px);
+    }
 
 }
 

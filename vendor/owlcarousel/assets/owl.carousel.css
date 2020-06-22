@@ -8,20 +8,23 @@
  
 }
   .owl-carousel .owl-stage {
-    width: 1104px;
+    max-width: 1104px;
     display: grid;
     grid-auto-flow: column;
     column-gap: 48px;
-    position: relative;
+    /* position: relative;
     -ms-touch-action: pan-Y;
     touch-action: manipulation;
-    -moz-backface-visibility: hidden;
+    -moz-backface-visibility: hidden; */
      
   }
 
   .owl-carousel-first .owl-stage {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-auto-flow: column;
+    /* column-gap: 48px; */
    
   }
 
@@ -229,3 +232,31 @@
     z-index: 1;
     height: 100%;
     width: 100%; }
+
+
+    @media screen and (max-width: 768px) {
+      .owl-carousel .owl-stage {
+        column-gap: 16px;
+
+      }
+        
+  }
+
+  @media screen and (max-width: 576) {
+    .owl-carousel-first .owl-stage {
+      column-gap: 16px;
+      justify-content: start;
+      max-width: 576px;
+    }
+      
+}
+
+@media screen and (max-width: 414) {
+  .owl-carousel-first .owl-stage {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    column-gap: 16px;
+    justify-items: start;
+    
+  }
+    
+}
