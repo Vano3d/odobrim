@@ -6,16 +6,20 @@ html {
     font-family: 'Montserrat', "Verdana", sans-serif;
 } 
 
-
+/* 
 .page {
     
     
-}
+} */
 
 .top {
     max-width: 1130px;
     padding: 10px 15px;
     margin: 0 auto;
+}
+
+.top__link {
+    display: block;
 }
 
 .header {
@@ -429,46 +433,44 @@ html {
 
 
 .bottom {
-    width: 100%;
+    
+   width: 100%;
 }
+
 .bottom__block {
     height: 64px;
     background-color: #fff;
 }
 .bottom__block-logo {
-    margin-top: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
     height: 60px;
     background-color: #fff;
     max-width: 1104px;
+    padding: 16px 0;
     margin: 0 auto;
-    padding-top: 16px;
 }
 
 .bottom_line {
     border: 1px solid #F3F3F3;
 }
 
-.footer {
-   
+.footer { 
     background-color: #F3F3F3;
     padding: 20px 0 20px;
-    width: 100%;
-    
+    width: 100%;  
 }
 
 .footer__wrapper {
     max-width: 1104px;
     margin: 0 auto;
-
 }
 
 .footer__info {
     font-size: 13px;
     line-height: 1.7;
-    color: #979797;
-    
-   
-   
+    color: #979797;  
 }
 
 .footer__items {
@@ -505,9 +507,12 @@ html {
     }
 
     .choose__cards {
-
         grid-template-columns: repeat(2, minmax(465px, 1fr));
        }
+
+       .bottom__block-logo {
+        padding: 16px 0 16px 16px;    
+    }
 
 }
 
@@ -722,6 +727,14 @@ html {
 
 }
 
+.bottom__block {
+    height: 36px;
+}
+.bottom__block-logo {
+    height: 48px;
+    padding: 0 0 0 16px;
+}
+
 @media screen and (max-width: 740px) {
     
     .getmoney__block {
@@ -823,16 +836,18 @@ html {
 @media screen and (max-width: 510px) {
 
     .header__wrapper {
-
         padding: 0 0 0 20px;
-
     }
 
+ 
+
     .header__image {
+
         object-fit: cover;
-        width: 214px;
+        width: 174px;
         height: 211px;
-        object-position: 24% 0px;
+        object-position: 57% 0px;
+        
     }
 
 }
@@ -846,12 +861,17 @@ html {
 
 @media screen and (max-width: 375px) {
     
+    .header__image {
+        width: 150px;
+        object-position: 41% 0px;
+    }
+
     .choose__item {
         max-width: 343px;
     }  
     
     .choose__cards {
-        grid-template-columns: minmax(min-content, 343px));
+        grid-template-columns: minmax(min-content, 343px);
         grid-gap: 16px 16px;
     }
   
@@ -883,6 +903,10 @@ html {
 }
 
 @media screen and (max-width: 360px) {
+    .header__image {
+        width: 135px;
+        object-position: 36% 0px;
+    }
 
     .slider {
         padding: 0 14px 36px;
@@ -902,9 +926,16 @@ html {
 }
 
 @media screen and (max-width: 320px) {
+    .header__wrapper {
+        display: block;
+        max-width: 242px;
+        margin: 0;
+        padding: 24px 0 24px 20px;
+    }
     .header__image {
         display: none;
     }
+
 
     .choose__item {
         max-width: 288px;
