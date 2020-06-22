@@ -1,11 +1,19 @@
 .owl-carousel {
 
   -webkit-tap-highlight-color: transparent;
-  /* position relative and z-index fix webkit rendering fonts issue */
   position: relative;
   z-index: 1; 
+   
+}
+
+.owl-carousel-first {
+
+  -webkit-tap-highlight-color: transparent;
   
- 
+  position: relative;
+  z-index: 1; 
+
+   
 }
   .owl-carousel .owl-stage {
     max-width: 1104px;
@@ -20,13 +28,12 @@
   }
 
   .owl-carousel-first .owl-stage {
-    /* display: flex;
-    justify-content: space-between; */
     display: grid;
-    grid-auto-flow: column;
-    /* column-gap: 48px; */
-   
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 48px;
+
   }
+
 
   .owl-carousel .owl-stage:after {
     
@@ -234,29 +241,66 @@
     width: 100%; }
 
 
+
+    @media screen and (max-width: 1024px) {
+   
+      .owl-carousel-first .owl-item {
+        max-width: 280px;
+    
+      }
+        
+  }
     @media screen and (max-width: 768px) {
       .owl-carousel .owl-stage {
-        column-gap: 16px;
+        column-gap: 10px;
 
+      }
+      .owl-carousel-first .owl-stage {
+        column-gap: 10px;
+      }
+      .owl-carousel-first .owl-item {
+        max-width: 235px;
+    
       }
         
   }
 
-  @media screen and (max-width: 576) {
+  @media screen and (max-width: 576px) {
     .owl-carousel-first .owl-stage {
-      column-gap: 16px;
-      justify-content: start;
+    
       max-width: 576px;
     }
       
+    .owl-carousel-first .owl-item {
+      max-width: 260px;
+  
+    }
 }
 
-@media screen and (max-width: 414) {
-  .owl-carousel-first .owl-stage {
+@media screen and (max-width: 414px) {
+  /* .owl-carousel-first .owl-stage {
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     column-gap: 16px;
     justify-items: start;
     
-  }
+  } */
     
 }
+
+
+@media screen and (max-width: 320px) {
+  
+
+  .owl-carousel .owl-stage {
+    max-width: 320px;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 26px;
+    
+  }
+  
+    
+}
+
+
+

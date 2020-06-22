@@ -9,7 +9,7 @@ html {
 
 .page {
     
-    transition: .3s ease;
+    
 }
 
 .top {
@@ -45,6 +45,7 @@ html {
     line-height: 1.23;
     color: #333333;
     position: relative;
+    
 }
 
 .header__subtitle {
@@ -184,6 +185,7 @@ html {
 .getmoney {
     background-color: #F3F3F3;
     padding: 64px 20px;
+    transition: .3s ease;
 }
 
 .getmoney__block {
@@ -540,8 +542,7 @@ html {
     }
 
     .slider__item {
-
-        max-width: 280px;
+        width: 280px;
     }
 
 @media screen and (max-width: 768px) {
@@ -648,13 +649,18 @@ html {
     .choose__card-right {
        height: 144px;
     }
+
      
     .choose__button {
         margin-top: 35px;
         width: 135px;
         height: 32px;
         font-size: 13px;
-        
+    }
+
+    .getmoney {
+        background-color: #F3F3F3;
+        padding: 36px 16px;
     }
 
     .getmoney__block {
@@ -773,7 +779,7 @@ html {
 }
 
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 700px) {
     
     .header__text {
         margin-top: 24px;
@@ -814,6 +820,23 @@ html {
 
 }
 
+@media screen and (max-width: 510px) {
+
+    .header__wrapper {
+
+        padding: 0 0 0 20px;
+
+    }
+
+    .header__image {
+        object-fit: cover;
+        width: 214px;
+        height: 211px;
+        object-position: 24% 0px;
+    }
+
+}
+
 @media screen and (max-width: 414px) {
     .header__title {
         font-size: 24px;
@@ -822,6 +845,40 @@ html {
 }
 
 @media screen and (max-width: 375px) {
+    
+    .choose__item {
+        max-width: 343px;
+    }  
+    
+    .choose__cards {
+        grid-template-columns: minmax(min-content, 343px));
+        grid-gap: 16px 16px;
+    }
+  
+      
+    .choose__card-right {
+        object-fit: cover;
+        width: 140px;
+        height: 100%;
+    }
+     
+       
+    .section__title_getmoney {
+        line-height: 1.4;
+        max-width: 290px;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        
+    }
+
+    .greenmile_getmoney::after {
+        transform: translate(45px, -4px);
+        width: 69%; 
+        height: 7px; 
+        position: relative;
+        z-index: 2;
+    }
 
 }
 
@@ -849,10 +906,22 @@ html {
         display: none;
     }
 
+    .choose__item {
+        max-width: 288px;
+    }
+
+    .choose__card-right {
+        object-fit: cover;
+        width: 116px;
+     
+    }
+
     .greenmile_slider::after {
         width: 101%; 
         transform: translate(-2px, -4px);
     }
+
+    
 
 }
 
