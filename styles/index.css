@@ -689,7 +689,7 @@ html {
      
     .choose__button {
         margin-top: 35px;
-        width: 135px;
+        width: 139px;
         height: 32px;
         font-size: 13px;
     }
@@ -939,6 +939,7 @@ html {
 }
 
 @media screen and (max-width: 360px) {
+    
     .header__image {
         width: 135px;
         object-position: 36% 0px;
