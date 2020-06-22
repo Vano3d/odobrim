@@ -180,6 +180,7 @@ html {
     margin-top: 44px;
     width: 168px;
     height: 44px;
+    padding: 0;
     background: #47D31A;
     border-radius: 4px;
     font-weight: 500;
@@ -190,6 +191,7 @@ html {
     border: 0;
     box-shadow: none;
     transition: .3s ease;
+
 }
 
 /* .choose__item button {
