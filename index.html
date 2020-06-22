@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кредиты на любые цели</title>
     <link rel="stylesheet" href="./styles/index.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" href="./vendor/owlcarousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="./vendor/owlcarousel/assets/owl.theme.default.css">
     <script src="js/wow.min.js"></script>
     <script>new WOW().init();</script>
+    <script src="./vendor/owlcarousel/jquery.min.js"></script>
+    <script src="./vendor/owlcarousel/owl.carousel.min.js"></script>
 </head>
 <body>
-
-    
     <div class="page">
         <div class="top">
             <a href="#" class="top__link"><img src="./images/logo.svg" alt="Одобрим.ру" class="top__logo"></a>
@@ -29,7 +30,41 @@
            </section>
            <section class="choose">
                <h2 class="section__title"><span class="greenmile">Выберите</span>&nbsp;нужное</h2>
-               <ul class="choose__cards">
+               <div class="choose__cards">
+                <a class="choose__item" href="https://odobrim.ru/loan" target="_blank">
+                        <div class="choose__card-left">
+                            <h3 class="choose__header">Микрозаймы</h3>
+                            <p class="choose__subheader">Первый заём - 0%</p>
+                            <button class="choose__button">Получить заём</button>
+                        </div>
+                        <img src="./images/loan-man.png" alt="Получить заём" class="choose__card-right">
+                </a>
+                <a class="choose__item" href="https://odobrim.ru/card" target="_blank">
+                    <div class="choose__card-left">
+                        <h3 class="choose__header">Кредитные карты</h3>
+                        <p class="choose__subheader">Кэшбэк, рассрочка</p>
+                        <button class="choose__button">Получить карту</button>
+                    </div>
+                    <img src="./images/card-woman.png" alt="Получить карту" class="choose__card-right">
+                </a>
+                <a class="choose__item" href="https://odobrim.ru/cash" target="_blank">
+                    <div class="choose__card-left">
+                        <h3 class="choose__header">Кредиты онлайн</h3>
+                        <p class="choose__subheader">На любые цели</p>
+                        <button class="choose__button">Получить кредит</button>
+                    </div>
+                    <img src="./images/cash-man.png" alt="Получить заём" class="choose__card-right">
+                </a>
+                <a class="choose__item" href="https://odobrim.ru/refinance" target="_blank">
+                    <div class="choose__card-left">
+                        <h3 class="choose__header">Рефинансирование</h3>
+                        <p class="choose__subheader">Одобрение 96%</p>
+                        <button class="choose__button">Получить рефин</button>
+                    </div>
+                    <img src="./images/refin-woman.png" alt="Получить рефин" class="choose__card-right">
+                </a>
+           </div>
+               <!-- <ul class="choose__cards">
                     <li class="choose__item">
                             <div class="choose__card-left">
                                 <h3 class="choose__header">Микрозаймы</h3>
@@ -62,10 +97,10 @@
                         </div>
                         <img src="./images/refin-woman.png" alt="Получить рефин" class="choose__card-right">
                     </li>
-               </ul>
+               </ul> -->
            </section>
            <section class="getmoney">
-            <h2 class="section__title"><span class="greenmile">Получите деньги</span>&nbsp;за 10 минут</h2>
+            <h2 class="section__title section__title_getmoney"><span class="greenmile greenmile_getmoney">Получите деньги</span>&nbsp;за 10 минут</h2>
 
                <div class="getmoney__block">
                     <ul class="getmoney__items">
@@ -80,8 +115,11 @@
                                 </svg>
                             </div>
 
-                            <h4 class="getmoney__header">Заполните форму заявки</h4>
-                            <p class="getmoney__subheader">нужен только паспорт</p>
+                            <div class="getmoney__text-wrapper">
+                                <h4 class="getmoney__header">Заполните форму заявки</h4>
+                                <p class="getmoney__subheader">нужен только паспорт</p>
+                            </div>
+
                         </li>
                         <li class="getmoney__item">
                             <div class="getmoney__icon"><span class="getmoney__digit">2</span></div>
@@ -97,8 +135,10 @@
                                 </svg>
                             </div>
 
-                            <h4 class="getmoney__header">Выберите предложение</h4>
-                            <p class="getmoney__subheader">из списка одобренных</p>
+                            <div class="getmoney__text-wrapper">
+                                <h4 class="getmoney__header">Выберите предложение</h4>
+                                <p class="getmoney__subheader">из списка одобренных</p>
+                            </div>
                         </li>
                         <li class="getmoney__item">
                             <div class="getmoney__icon"><span class="getmoney__digit">3</span></div>
@@ -108,39 +148,50 @@
                                     81 81 63.0914 81 41C81 19.4108 62.8964 1.78881 41.5 1"/>
                                 </svg>
                             </div>
-                            <h4 class="getmoney__header">Получите деньги</h4>
-                            <p class="getmoney__subheader">на карту или наличными</p>
+                            <div class="getmoney__text-wrapper">
+                                <h4 class="getmoney__header">Получите деньги</h4>
+                                <p class="getmoney__subheader">на карту или наличными</p>
+                            </div>
                         </li>
                     </ul>
                </div>
+           </section>
 
-           </section>
+           
+
            <section class="slider">
-            <h2 class="section__title"><span class="greenmile">Без платежей и комиссий</span>&nbsp;за подбор</h2>
-               <ul class="slider__items">
-                   <li class="slider__item">
-                         <div class="slider__facts">
-                            <h4 class="slider__amount">223 678</h4>
-                            <p class="slider__sub">человек уже сделали подбор</p>
-                         </div>
-                         <img src="./images/slider__icon1.png" alt="сделали выбор" class="slider__icon">
-                   </li>
-                   <li class="slider__item">
-                    <div class="slider__facts">
-                       <h4 class="slider__amount">2 678</h4>
-                       <p class="slider__sub">заявок отправлено сегодня</p>
+            <h2 class="section__title section__title_slider"><span class="greenmile greenmile_slider">Без платежей и комиссий</span>&nbsp;за подбор</h2>
+
+            <div class="row">
+                <div class="large-12 columns">
+                    <div class="owl-carousel-first slider__items">
+                        <div class="slider__item">
+                            <div class="slider__facts">
+                               <h4 class="slider__amount">223 678</h4>
+                               <p class="slider__sub">человек уже сделали подбор</p>
+                            </div>
+                            <img src="./images/slider__icon1.png" alt="сделали выбор" class="slider__icon">
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__facts">
+                                <h4 class="slider__amount">2 678</h4>
+                                <p class="slider__sub">заявок отправлено сегодня</p>
+                            </div>
+                            <img src="./images/slider__icon2.png" alt="отправлено сегодня" class="slider__icon">
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__facts">
+                                <h4 class="slider__amount">88%</h4>
+                                <p class="slider__sub">получают одобрение заявки</p>
+                            </div>
+                            <img src="./images/slider__icon3.png" alt="одобрение заявки" class="slider__icon">
+                        </div>
                     </div>
-                    <img src="./images/slider__icon2.png" alt="сделали выбор" class="slider__icon">
-              </li>
-              <li class="slider__item">
-                <div class="slider__facts">
-                   <h4 class="slider__amount">88%</h4>
-                   <p class="slider__sub">получают одобрение заявки</p>
                 </div>
-                <img src="./images/slider__icon3.png" alt="сделали выбор" class="slider__icon">
-          </li>
-               </ul>
+            </div>
+   
            </section>
+
            <section class="choose">
             <h2 class="section__title"><span class="greenmile">Выберите</span>&nbsp;нужное</h2>
             <ul class="choose__cards">
@@ -178,35 +229,43 @@
                  </li>
             </ul>
         </section>
+        
+
         <section class="partners">
             <h2 class="section__title"><span class="greenmile">Партнёры</span>&nbsp;Одобрим.ру</h2>
-            <ul class="parners__slider">
-                <li class="partners__item">
-                    <img src="./images/partners__1.png" alt="Альфабанк" class="partners__card">
-                    <p class="partners__text">Альфабанк</p>
-                </li>
-                <li class="partners__item">
-                    <img src="./images/partners__2.png" alt="Тинькофф банк" class="partners__card">
-                    <p class="partners__text">Тинькофф банк</p>
-                </li>
-                <li class="partners__item">
-                    <img src="./images/partners__3.png" alt="Банк Восточный" class="partners__card">
-                    <p class="partners__text">Банк Восточный</p>
-                </li>
-                <li class="partners__item">
-                    <img src="./images/partners__4.png" alt="Райффайзен банк" class="partners__card">
-                    <p class="partners__text">Райффайзен банк</p>
-                </li>
-                <li class="partners__item">
-                    <img src="./images/partners__5.png" alt="Росбанк" class="partners__card">
-                    <p class="partners__text">Росбанк</p>
-                </li>
-                <li class="partners__item">
-                    <img src="./images/partners__6.png" alt="ОТП банк" class="partners__card">
-                    <p class="partners__text">ОТП банк</p>
-                </li>
-            </ul>
-            </section>
+          
+                <div class="row">
+                    <div class="large-12 columns">
+                        <div class="owl-carousel parners__slider">
+                            <div class="partners__item">
+                                <img src="./images/partners__1.png" alt="Альфабанк" class="partners__icon">
+                                <p class="partners__text">Альфабанк</p>
+                            </div>
+                            <div class="partners__item">
+                                <img src="./images/partners__2.png" alt="Тинькофф банк" class="partners__icon">
+                                <p class="partners__text">Тинькофф банк</p>
+                            </div>
+                            <div class="partners__item">
+                                <img src="./images/partners__3.png" alt="Банк Восточный" class="partners__icon">
+                                <p class="partners__text">Банк Восточный</p>
+                            </div>
+                            <div class="partners__item">
+                                <img src="./images/partners__4.png" alt="Райффайзен банк" class="partners__icon">
+                                <p class="partners__text">Райффайзен банк</p>
+                            </div>
+                            <div class="partners__item">
+                                <img src="./images/partners__5.png" alt="Росбанк" class="partners__icon">
+                                <p class="partners__text">Росбанк</p>
+                            </div>
+                            <div class="partners__item">
+                                <img src="./images/partners__6.png" alt="ОТП банк" class="partners__icon">
+                                <p class="partners__text">ОТП банк</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
             <div class="bottom">
                 <div class="bottom__block"></div>
                 <hr class="bottom_line">
@@ -217,26 +276,129 @@
         </div>
     </div>
     <footer class="footer">
-        <p class="footer__info">© Одобрим.ру, 2020. Сервис подбора услуг финансовых организаций. 
-            Сервис предоставлен Обществом с ограниченной ответственностью «БКС Старт», информация 
-            на Сервисе не может рассматриваться как публичная оферта, предложение или приглашение 
-            получить услуги ООО «БКС Старт» и/или получить финансовые и иные услуги третьих лиц. 
-            Информация не может рассматриваться в качестве гарантий или обещаний в будущем получение
-             финансовой услуги третьих лиц.<br>
-
-            При использовании материалов гиперссылка на odobrim.ru обязательна.</p>
-        <nav class="footer__nav">
-            <ul class="footer__items">
-                <li class="footer__item">Политика конфиденциальности</li>
-                <li class="footer__item">Соглашение об использовании сайта</li>
-                <li class="footer__item">Правила оказания услуг</li>
-                <li class="footer__item">Согласие для зарегистрированного пользователя</li>
-                <li class="footer__item">Реквизиты</li>
-            </ul>
-        </nav>
-
+        <div class="footer__wrapper">
+            <p class="footer__info">© Одобрим.ру, 2020. Сервис подбора услуг финансовых организаций. 
+                Сервис предоставлен Обществом с ограниченной ответственностью «БКС Старт», информация 
+                на Сервисе не может рассматриваться как публичная оферта, предложение или приглашение 
+                получить услуги ООО «БКС Старт» и/или получить финансовые и иные услуги третьих лиц. 
+                Информация не может рассматриваться в качестве гарантий или обещаний в будущем получение
+                 финансовой услуги третьих лиц.<br>
+    
+                При использовании материалов гиперссылка на odobrim.ru обязательна.</p>
+            <nav class="footer__nav">
+                <p class="footer__links">
+                    <a href="#" class="footer__link">Политика конфиденциальности</a><span>&emsp;|&emsp;</span>
+                    <a href="#" class="footer__link">Соглашение об использовании сайта</a><span>&emsp;|&emsp;</span>
+                    <a href="#" class="footer__link">Правила оказания услуг</a><span>&emsp;|&emsp;</span>
+                    <a href="#" class="footer__link">Согласие для зарегистрированного пользователя</a><span>&emsp;|&emsp;</span>
+                    <a href="#" class="footer__link">Реквизиты</a>
+                </p>
+            </nav>
+        </div>
     </footer>
+
+    <script>
+        $(document).ready(function() {
+          $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            responsiveClass: true,
+            responsive: {
+              0: {
+                items: 1,
+                nav: true
+              },
+              320: {
+                items: 2,
+                dots: false,
+                loop: false,
+                nav: false
+              },
+              414: {
+                items: 2,
+                dots: false,
+                loop: false,
+                nav: false
+              },
+              576: {
+                items: 3,
+                dots: false,
+                loop: false,
+                nav: false
+              },
+              768: {
+                items: 4,
+                dots: false,
+                loop: false,
+                nav: false
+              },
+              1024: {
+                items: 5,
+                dots: false,
+                loop: false,
+                nav: false
+              },
+              1280: {
+                items: 6,
+                nav: false,
+                dots: false,
+                loop: false,
+                margin: 0,
+              }
+            }
+          })
+
+          $('.owl-carousel-first').owlCarousel({
+            loop: true,
+            margin: 0,
+            responsiveClass: true,
+            responsive: {
+              0: {
+                items: 1,
+                nav: true
+              },
+              320: {
+                items: 1,
+                dots: false,
+                nav: false,
+                loop: false
+              },
+              414: {
+                items: 1,
+                dots: false,
+                loop: false,
+                nav: false
+              },
+              576: {
+                items: 2,
+                dots: false,
+                loop: false,
+                nav: false
+              },
+              768: {
+                items: 3,
+                dots: false,
+                loop: false,
+                nav: false
+              },
+              1024: {
+                items: 3,
+                dots: false,
+                loop: false,
+                nav: false
+              },
+              1280: {
+                items: 3,
+                nav: false,
+                dots: false,
+                loop: false,
+                margin: 0
+              }
+            }
+          })
+
+        })
+      </script>
 </body>
 </html>
-
 
