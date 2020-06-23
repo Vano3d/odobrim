@@ -1,11 +1,10 @@
 @import url(../vendor/normalize.css);
+@import url(../vendor/fonts/fonts.css);
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap');
 
-html {
-    font-family: 'Montserrat', "Verdana", sans-serif;
-} 
-
+.page {
+    font-family: 'Montserrat', 'Verdana', sans-serif;
+}
 
 .top {
     max-width: 1130px;
@@ -23,6 +22,7 @@ html {
     background-color: #EDEDEF;
     margin: 0 auto;
     
+    
 }
 
 .header__wrapper {
@@ -32,6 +32,7 @@ html {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    
 }
 .header__text {
     align-self: flex-start;
