@@ -1,0 +1,18 @@
+.greenmile {
+    
+    position: relative;
+    z-index: 1;
+}
+
+.greenmile::after {
+    content: "";
+    position: absolute;
+    display: block;
+    transform: translate(-3px, -4px);
+    width: 103%; 
+    height: 7px; 
+    background-color:  #56FC21;
+    border-radius: 7px;
+    z-index: -1;
+    
+}

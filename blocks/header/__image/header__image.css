@@ -1,0 +1,5 @@
+.header__image {
+    max-height: 308px;
+    display: block;
+    object-fit: cover;
+}

@@ -1,0 +1,52 @@
+
+.section__title {
+    margin: 0;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.23;
+    color: #333;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 850px) {
+    
+    .section__title {
+        font-size: 20px;
+        
+    }
+
+    .section__title_slider {
+        line-height: 1.4;
+        max-width: 339px;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+ 
+    .section__title_getmoney {
+        line-height: 1.4;
+        max-width: 290px;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+    .section__title_slider {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+}

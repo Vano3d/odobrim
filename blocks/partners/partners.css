@@ -1,0 +1,8 @@
+@import url(./__icon/partners__icon.css);
+@import url(./__item/partners__item.css);
+@import url(./__slider/parners__slider.css);
+@import url(./__text/partners__text.css);
+
+.partners {
+        padding: 36px 16px 36px;
+    }

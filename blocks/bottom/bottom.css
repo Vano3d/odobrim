@@ -1,0 +1,7 @@
+@import url(./__block-logo/bottom__block-logo.css);
+@import url(./__block/bottom__block.css);
+@import url(./_line/bottom_line.css);
+
+.bottom {
+   width: 100%;
+}

@@ -1,0 +1,14 @@
+.getmoney_icon_one {
+        left: 23px;
+    }    top: -4px;
+        width: 54px;
+        height: 54px;
+    };
+    height: 75px;
+    stroke-dasharray: 275;
+    animation: dash-one 1.5s ease forwards;
+    stroke-width: 5px;
+    stroke: #47D31A;
+    
+    stroke-linecap: round;
+}

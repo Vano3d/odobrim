@@ -1,0 +1,15 @@
+@import url(./__block/getmoney__block.css);
+@import url(./__header/getmoney__header.css);
+@import url(./__icon/getmoney__icon.css);
+@import url(./__item/getmoney__item.css);
+@import url(./__items/getmoney__items.css);
+@import url(./__subheader/getmoney__subheader.css);
+@import url(./__text-wrapper/getmoney__text-wrapper.css);
+@import url(./_icon/getmoney_icon_one.css);
+@import url(./_icon/getmoney_icon_two.css);
+@import url(./_icon/getmoney_icon_three.css);
+
+.getmoney {
+        background-color: #F3F3F3;
+        padding: 36px 16px;
+    }

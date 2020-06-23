@@ -1,0 +1,10 @@
+@import url(./__amount/slider__amount.css);
+@import url(./__facts/slider__facts.css);
+@import url(./__icon/slider__icon.css);
+@import url(./__item/slider__item.css);
+@import url(./__items/slider__items.css);
+@import url(./__sub/slider__sub.css);
+
+.slider {
+        padding: 0 14px 36px;
+    }

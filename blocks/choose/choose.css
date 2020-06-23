@@ -1,0 +1,11 @@
+@import url(./__button/choose__button.css);
+@import url(./__card-left/choose__card-left.css);
+@import url(./__card-right/choose__card-right.css);
+@import url(./__cards/choose__cards.css);
+@import url(./__header/choose__header.css);
+@import url(./__item/choose__item.css);
+@import url(./__subheader/choose__subheader.css);
+
+.choose {
+        padding: 36px 20px;
+    }

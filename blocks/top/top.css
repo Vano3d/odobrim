@@ -1,0 +1,7 @@
+@import url(./__link/top__link.css);
+
+.top {
+    max-width: 1130px;
+    padding: 10px 15px;
+    margin: 0 auto;
+}
