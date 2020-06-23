@@ -9,5 +9,95 @@
     height: 308px;
     background-color: #EDEDEF;
     margin: 0 auto;
-  
+}
+
+
+@media screen and (max-width: 850px) {
+    
+    .header {
+        height: 213px;
+    }
+    .header__text {
+        margin-top: 32px;
+    }
+    .header__title {
+        font-size: 34px;
+    }
+
+    .header__subtitle {
+        font-size: 13px;
+        
+    }
+    .header__image {
+        height: 211px;
+    }
+
+}
+
+
+@media screen and (max-width: 700px) {
+    
+    .header__text {
+        margin-top: 24px;
+    }
+
+    .header__title {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 510px) {
+
+    .header__wrapper {
+        padding: 0 0 0 20px;
+    }
+
+    .header__image {
+
+        object-fit: cover;
+        width: 174px;
+        height: 211px;
+        object-position: 57% 0px;
+        
+    }
+
+}
+
+@media screen and (max-width: 414px) {
+    .header__title {
+        font-size: 24px;
+    } 
+
+}
+
+@media screen and (max-width: 375px) {
+    
+    .header__image {
+        width: 150px;
+        object-position: 41% 0px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    
+    .header__image {
+        width: 135px;
+        object-position: 36% 0px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .header__wrapper {
+        display: block;
+        max-width: 242px;
+        margin: 0;
+        padding: 24px 0 24px 20px;
+    }
+    .header__image {
+        display: none;
+    }
+
 }

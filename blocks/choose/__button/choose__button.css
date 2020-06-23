@@ -1,6 +1,26 @@
 .choose__button {
-        margin-top: 35px;
-        width: 139px;
-        height: 32px;
-        font-size: 13px;
-    }
+    margin-top: 44px;
+    width: 168px;
+    height: 44px;
+    padding: 0;
+    background: #47D31A;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    border: 0;
+    box-shadow: none;
+    transition: .3s ease;
+
+}
+
+.choose__button:hover {
+    cursor: pointer;
+ }
+ 
+ .choose__button:active, .choose__button:focus, .choose__button:visited  {
+     outline: 0; 
+     -webkit-appearance :none;
+  }

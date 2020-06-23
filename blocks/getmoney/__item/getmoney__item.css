@@ -1,6 +1,15 @@
 .getmoney__item {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-align: left;
-    }
+    position: relative;
+    min-width: 228px;
+    
+}
+
+.getmoney__item:not(:last-child):after {
+    position: absolute;
+    content: "";
+    left: 92%;
+    top: 23%;
+    width: 200px;
+    height: 2px;
+    background: #E0E0E0 no-repeat;
+}

@@ -3,6 +3,14 @@
 @import url(../blocks/page/page.css);
 @import url(../blocks/top/top.css);
 @import url(../blocks/header/header.css);
+@import url(../blocks/greenmile/greenmile.css);
+@import url(../blocks/choose/choose.css);
+@import url(../blocks/section/__title/section__title.css);
+@import url(../blocks/getmoney/getmoney.css);
+@import url(../blocks/slider/slider.css);
+@import url(../blocks/partners/partners.css);
+@import url(../blocks/bottom/bottom.css);
+@import url(../blocks/footer/footer.css);
 
 
 /* 
@@ -51,7 +59,7 @@
     object-fit: cover;
 } */
 
-
+/* 
 .greenmile {
     
     position: relative;
@@ -69,8 +77,8 @@
     border-radius: 7px;
     z-index: -1;
     
-}
-
+} */
+/* 
 .choose {
     max-width: 1104px;
     padding: 64px 20px;
@@ -87,9 +95,9 @@
     margin-top: 48px;
     justify-content: center;
     transition: .3s ease;
-}
+} */
 
-.section__title {
+/* .section__title {
     margin: 0;
     font-weight: 800;
     font-size: 26px;
@@ -99,9 +107,9 @@
     display: flex;
     justify-content: center;
   
-}
+} */
 
-
+/* 
 .choose__item {
     display: block;
     text-decoration: none;
@@ -120,13 +128,9 @@
 .choose__item:hover {
     text-decoration: none;
     cursor: pointer;
-}
-
-.choose__item:hover {
     box-shadow: 0 6px 16px 0 rgba(0,0,0,0.16);
     transform: translateY(-2px);
-  
-    
+ 
 }
 
 
@@ -157,7 +161,7 @@
     
     height: 188px;
     transition: .2s ease;
-    /* padding-left: 15px; */
+    
 }
 
 .choose__button {
@@ -188,12 +192,10 @@
 .choose__button:active, .choose__button:focus, .choose__button:visited  {
     outline: 0; 
     -webkit-appearance:none;
-    /* box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none; */
- }
+ 
+ } */
 
-
+/* 
 .getmoney {
     background-color: #F3F3F3;
     padding: 64px 20px;
@@ -206,7 +208,7 @@
 }
 
 .getmoney__items {
-    background-color: #fff;;
+    background-color: #fff;
     margin: 0 auto;
     margin-top: 48px;
     padding: 48px 56px 64px;
@@ -336,11 +338,11 @@
     font-size: 15px;
     line-height: 1.2;
     color: #979797;
-}
+} */
 
 
 
-
+/* 
 
 .slider {
     background-color: #F3F3F3;
@@ -352,8 +354,7 @@
     max-width: 1104px;
     margin: 0 auto;
     margin-top: 48px;
-    padding: 0;
-    
+    padding: 0; 
 }
 
 .slider__item {
@@ -362,9 +363,7 @@
     max-width: 336px;
     height: 155px;
     background-color: #fff;
-    
     border-radius: 8px;
-   
 }
 
 .slider__facts {
@@ -378,7 +377,6 @@
     font-size: 36px;
     line-height: 1.2;
     color: #47D31A;
-
 }
 
 .slider__sub {
@@ -393,8 +391,8 @@
     width: 48px;
     height: 32px;
     padding: 20px 24px 0 0;
-}
-
+} */
+/* 
 .partners {
     background-color: #F3F3F3;
     padding: 64px 16px 64px;
@@ -435,9 +433,9 @@
     max-width: 88px;
     margin: 0 auto;
     margin-top: 20px;
-}
+} */
 
-
+/* 
 .bottom {
     
    width: 100%;
@@ -460,8 +458,8 @@
 
 .bottom_line {
     border: 1px solid #F3F3F3;
-}
-
+} */
+/* 
 .footer { 
     background-color: #F3F3F3;
     padding: 20px;
@@ -493,9 +491,9 @@
 
 .footer__link:hover {
     color: #2F80ED;
-}
+} */
 
-
+/* 
 
 @media screen and (max-width: 1200px) {
     .getmoney__item:not(:last-child):after {
@@ -506,18 +504,13 @@
         grid-template-columns: repeat(2, minmax(465px, 1fr));
        }
 
-       /* .bottom__block-logo {
-        padding: 16px 0 16px 16px;    
-    } */
 
 }
 
 @media screen and (max-width: 1024px) {
 
-
     .getmoney__block {
-        max-width: 975px;
-                
+        max-width: 975px;  
      }
 
      .getmoney__items {
@@ -545,6 +538,8 @@
     .slider__item {
         width: 280px;
     }
+
+}
 
 @media screen and (max-width: 850px) {
     
@@ -740,21 +735,13 @@
         height: 59px;
     }
 
-}
-
-.bottom__block {
-    height: 36px;
-}
-.bottom__block-logo {
-    height: 48px;
-    padding: 0 0 0 16px;
-}
-
 .footer { 
  
     padding: 16px;
 }
 
+}
+ 
 @media screen and (max-width: 740px) {
     
     .getmoney__block {
@@ -858,8 +845,6 @@
     .header__wrapper {
         padding: 0 0 0 20px;
     }
-
- 
 
     .header__image {
 
@@ -973,8 +958,5 @@
         transform: translate(-2px, -4px);
     }
 
-    
+} */
 
-}
-
-}

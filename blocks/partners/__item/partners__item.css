@@ -1,4 +1,10 @@
 .partners__item {
-        width: 160px;
-        height: 152px;
-    }
+    margin: 0;
+    width: 144px;
+    height: 155px;
+    background-color: #fff;
+    list-style-type: none;
+    text-align: center;
+    border-radius: 8px;
+  
+}

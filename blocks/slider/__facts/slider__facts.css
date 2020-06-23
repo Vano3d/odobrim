@@ -1,4 +1,4 @@
 .slider__facts {
-
-        padding: 0 0 18px 20px;
-    }
+    align-self: flex-end;
+    padding: 0 0 29px 24px;
+}

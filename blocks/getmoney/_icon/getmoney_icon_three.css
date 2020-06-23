@@ -1,9 +1,18 @@
-.getmoney_icon_three {
-        left: -4px;
-    }    top: -4px;
-        width: 59px;
-        height: 59px;
-    }x;
+  @keyframes dash-three {
+    from {
+      stroke-dashoffset: 350;
+    }
+    to {
+        stroke-dashoffset: 700;
+      }
+  }
+
+  .getmoney_icon_three {
+    position: absolute;
+    right: 72px;
+    top: -5px;
+    width: 82px;
+    height: 82px;
     stroke-dasharray: 350;
     animation: dash-three 2.2s 2.5s ease backwards;
     stroke-width: 5px;

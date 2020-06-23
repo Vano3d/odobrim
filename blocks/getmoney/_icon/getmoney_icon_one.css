@@ -1,14 +1,22 @@
-.getmoney_icon_one {
-        left: 23px;
-    }    top: -4px;
-        width: 54px;
-        height: 54px;
-    };
+@keyframes dash-one {
+    from {
+      stroke-dashoffset: 270;
+    }
+    to {
+        stroke-dashoffset: 540;
+      }
+  }
+
+  .getmoney_icon_one {
+    position: absolute;
+    right: 45px;
+    top: -6px;
+    z-index: 10;
+    width: 75px;
     height: 75px;
     stroke-dasharray: 275;
     animation: dash-one 1.5s ease forwards;
     stroke-width: 5px;
     stroke: #47D31A;
-    
     stroke-linecap: round;
 }

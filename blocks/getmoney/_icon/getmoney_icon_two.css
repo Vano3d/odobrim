@@ -1,7 +1,21 @@
-.getmoney_icon_two {
-        left: 0;
-
-    }     top: -4px;
-        width: 54px;
-        height: 54px;
+@keyframes dash-two {
+    from {
+      stroke-dashoffset: 270;
     }
+    to {
+        stroke-dashoffset: 540;
+      }
+  }
+
+  .getmoney_icon_two {
+    position: absolute;
+    right: 74px;
+    top: -6px;
+    width: 75px;
+    height: 75px;
+    stroke-dasharray: 270;
+    animation: dash-two 2s 1.2s ease backwards;
+    stroke-width: 5px;
+    stroke: #47D31A;
+    stroke-linecap: round;
+}

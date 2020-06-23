@@ -14,5 +14,46 @@
     background-color:  #56FC21;
     border-radius: 7px;
     z-index: -1;
-    
 }
+
+
+@media screen and (max-width: 850px) {
+    
+    .greenmile_slider::after {
+        transform: translate(16px, -4px);
+        width: 90%; 
+        height: 7px; 
+        position: relative;
+        z-index: 2;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    
+    .greenmile_getmoney::after {
+        transform: translate(45px, -4px);
+        width: 69%; 
+        height: 7px; 
+        position: relative;
+        z-index: 2;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+    .greenmile_slider::after {
+        transform: translate(13px, -4px);
+        width: 90%; 
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .greenmile_slider::after {
+        width: 101%; 
+        transform: translate(-2px, -4px);
+    }
+
+}
+

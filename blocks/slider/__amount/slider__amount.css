@@ -1,3 +1,7 @@
 .slider__amount {
-        font-size: 28px;
-    }   }
+    margin: 0;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.2;
+    color: #47D31A;
+}
