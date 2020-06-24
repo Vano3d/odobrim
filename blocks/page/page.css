@@ -1,3 +1,4 @@
 .page {
     font-family: 'Montserrat', 'Verdana', sans-serif;
+    min-width: 320px;
 }

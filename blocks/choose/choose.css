@@ -5,6 +5,7 @@
 @import url(./__header/choose__header.css);
 @import url(./__item/choose__item.css);
 @import url(./__subheader/choose__subheader.css);
+@import url(./__link/choose__link.css);
 
 .choose {
     max-width: 1104px;
@@ -15,7 +16,7 @@
 @media screen and (max-width: 1200px) {
 
   .choose__cards {
-      grid-template-columns: repeat(2, minmax(465px, 1fr));
+      grid-template-columns: repeat(2, minmax(445px, 1fr));
      }
 }
 
@@ -25,6 +26,7 @@
   }
 
 }
+
 
 @media screen and (max-width: 850px) {
   .choose {
@@ -84,6 +86,7 @@
       height: 144px;
   }
  
+  
 }
 
 
@@ -108,16 +111,37 @@
    
 }
 
+@media screen and (max-width: 360px) {
+  
+    .choose__item {
+        width: 290px;
+    }
+    .choose__link {
+        width: 290px;
+    }
+  
+    .choose__card-right {
+        object-fit: cover;
+        width: 116px;
+    }
+    .choose__header_long {
+      font-size: 13px;
+  }
+  
+  }
+  
+
 @media screen and (max-width: 320px) {
   
-  .choose__item {
-      max-width: 288px;
-  }
 
   .choose__card-right {
       object-fit: cover;
       width: 116px;
-   
   }
+  .choose__header_long {
+    font-size: 13px;
+}
+
 
 }
+

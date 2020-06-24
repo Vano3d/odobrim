@@ -147,7 +147,7 @@
     }
 
     .getmoney_icon_one {
-        left: 23px;
+        left: 22px;
     }
 
     .getmoney_icon_two {
@@ -175,4 +175,23 @@
     }
 
 }
+
+@media screen and (max-width: 320px) {
+    
+    .getmoney__header {
+        font-size: 13px;  
+    }
+
+    .getmoney__items {
+         
+        padding: 36px 25px 36px 16px;
+     
+    }
+
+    .getmoney_icon_one {
+        top: -3px;
+    }
+
+}
+
 

@@ -28,42 +28,46 @@
                </div>
            </section>
            <section class="choose">
-                <h2 class="section__title"><span class="greenmile">Выберите</span>&nbsp;нужное</h2>
-                <div class="choose__cards">
-                    <div class="choose__item" onclick="window.open('https://odobrim.ru/loan')">
-                            <div class="choose__card-left">
-                                <h3 class="choose__header">Микрозаймы</h3>
-                                <p class="choose__subheader">Первый заём - 0%</p>
-                                <button class="choose__button">Получить заём</button>
-                            </div>
-                            <img src="./images/loan-man.png" alt="Получить заём" class="choose__card-right">
-                    </div>
-                    <div class="choose__item" onclick="window.open('https://odobrim.ru/card')">
+            <h2 class="section__title"><span class="greenmile">Выберите</span>&nbsp;нужное</h2>
+            <ul class="choose__cards">
+                <li class="choose__item">
                         <div class="choose__card-left">
-                            <h3 class="choose__header">Кредитные карты</h3>
-                            <p class="choose__subheader">Кэшбэк, рассрочка</p>
-                            <button class="choose__button">Получить карту</button>
+                            <h3 class="choose__header">Микрозаймы</h3>
+                            <p class="choose__subheader">Первый заём - 0%</p>
+                            <button class="choose__button">Получить заём</button>
                         </div>
-                        <img src="./images/card-woman.png" alt="Получить карту" class="choose__card-right">
+                        <img src="./images/loan-man.png" alt="Получить заём" class="choose__card-right">
+                        <a href="https://odobrim.ru/loan" class="choose__link" target="_blank"></a>
+                </li>
+                <li class="choose__item">
+                    <div class="choose__card-left">
+                        <h3 class="choose__header">Кредитные карты</h3>
+                        <p class="choose__subheader">Кэшбэк, рассрочка</p>
+                        <button class="choose__button">Получить карту</button>
                     </div>
-                    <div class="choose__item" onclick="window.open('https://odobrim.ru/cash')">
-                        <div class="choose__card-left">
-                            <h3 class="choose__header">Кредиты онлайн</h3>
-                            <p class="choose__subheader">На любые цели</p>
-                            <button class="choose__button">Получить кредит</button>
-                        </div>
-                        <img src="./images/cash-man.png" alt="Получить заём" class="choose__card-right">
+                    <img src="./images/card-woman.png" alt="Получить карту" class="choose__card-right">
+                    <a href="https://odobrim.ru/card" class="choose__link" target="_blank"></a>
+                </li>
+                <li class="choose__item">
+                    <div class="choose__card-left">
+                        <h3 class="choose__header">Кредиты онлайн</h3>
+                        <p class="choose__subheader">На любые цели</p>
+                        <button class="choose__button">Получить кредит</button>
                     </div>
-                    <div class="choose__item" onclick="window.open('https://odobrim.ru/refinance')">
-                        <div class="choose__card-left">
-                            <h3 class="choose__header">Рефинансирование</h3>
-                            <p class="choose__subheader">Одобрение 96%</p>
-                            <button class="choose__button">Получить рефин</button>
-                        </div>
-                        <img src="./images/refin-woman.png" alt="Получить рефин" class="choose__card-right">
+                    <img src="./images/cash-man.png" alt="Получить заём" class="choose__card-right">
+                    <a href="https://odobrim.ru/cash" class="choose__link" target="_blank"></a>
+                </li>
+                <li class="choose__item">
+                    <div class="choose__card-left">
+                        <h3 class="choose__header choose__header_long">Рефинансирование</h3>
+                        <p class="choose__subheader">Одобрение 96%</p>
+                        <button class="choose__button">Получить рефин</button>
                     </div>
-                </div>
-           </section>
+                    <img src="./images/refin-woman.png" alt="Получить рефин" class="choose__card-right">
+                    <a href="https://odobrim.ru/refinance" class="choose__link" target="_blank"></a>
+                </li>
+            </ul>
+       </section>
            <section class="getmoney">
             <h2 class="section__title section__title_getmoney"><span class="greenmile greenmile_getmoney">Получите деньги</span>&nbsp;за 10 минут</h2>
 
@@ -122,111 +126,112 @@
                </div>
            </section>
 
-           
 
            <section class="slider">
             <h2 class="section__title section__title_slider"><span class="greenmile greenmile_slider">Без платежей и комиссий</span>&nbsp;за подбор</h2>
 
             <div class="row">
                 <div class="large-12 columns">
-                    <div class="owl-carousel-first slider__items">
-                        <div class="slider__item">
+                    <ul class="owl-carousel-first slider__items">
+                        <li class="slider__item">
                             <div class="slider__facts">
                                <h4 class="slider__amount">223 678</h4>
                                <p class="slider__sub">человек уже сделали подбор</p>
                             </div>
                             <img src="./images/slider__icon1.png" alt="сделали выбор" class="slider__icon">
-                        </div>
-                        <div class="slider__item">
+                        </li>
+                        <li class="slider__item">
                             <div class="slider__facts">
                                 <h4 class="slider__amount">2 678</h4>
                                 <p class="slider__sub">заявок отправлено сегодня</p>
                             </div>
                             <img src="./images/slider__icon2.png" alt="отправлено сегодня" class="slider__icon">
-                        </div>
-                        <div class="slider__item">
+                        </li>
+                        <li class="slider__item">
                             <div class="slider__facts">
                                 <h4 class="slider__amount">88%</h4>
                                 <p class="slider__sub">получают одобрение заявки</p>
                             </div>
                             <img src="./images/slider__icon3.png" alt="одобрение заявки" class="slider__icon">
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
    
            </section>
-
+        
            <section class="choose">
             <h2 class="section__title"><span class="greenmile">Выберите</span>&nbsp;нужное</h2>
-            <div class="choose__cards">
-                <div class="choose__item" onclick="window.open('https://odobrim.ru/loan')">
+            <ul class="choose__cards">
+                <li class="choose__item">
                         <div class="choose__card-left">
                             <h3 class="choose__header">Микрозаймы</h3>
                             <p class="choose__subheader">Первый заём - 0%</p>
                             <button class="choose__button">Получить заём</button>
                         </div>
                         <img src="./images/loan-man.png" alt="Получить заём" class="choose__card-right">
-                </div>
-                <div class="choose__item" onclick="window.open('https://odobrim.ru/card')">
+                        <a href="https://odobrim.ru/loan" class="choose__link" target="_blank"></a>
+                </li>
+                <li class="choose__item">
                     <div class="choose__card-left">
                         <h3 class="choose__header">Кредитные карты</h3>
                         <p class="choose__subheader">Кэшбэк, рассрочка</p>
                         <button class="choose__button">Получить карту</button>
                     </div>
                     <img src="./images/card-woman.png" alt="Получить карту" class="choose__card-right">
-                </div>
-                <div class="choose__item" onclick="window.open('https://odobrim.ru/cash')">
+                    <a href="https://odobrim.ru/card" class="choose__link" target="_blank"></a>
+                </li>
+                <li class="choose__item">
                     <div class="choose__card-left">
                         <h3 class="choose__header">Кредиты онлайн</h3>
                         <p class="choose__subheader">На любые цели</p>
                         <button class="choose__button">Получить кредит</button>
                     </div>
                     <img src="./images/cash-man.png" alt="Получить заём" class="choose__card-right">
-                </div>
-                <div class="choose__item" onclick="window.open('https://odobrim.ru/refinance')">
+                    <a href="https://odobrim.ru/cash" class="choose__link" target="_blank"></a>
+                </li>
+                <li class="choose__item">
                     <div class="choose__card-left">
                         <h3 class="choose__header">Рефинансирование</h3>
                         <p class="choose__subheader">Одобрение 96%</p>
                         <button class="choose__button">Получить рефин</button>
                     </div>
                     <img src="./images/refin-woman.png" alt="Получить рефин" class="choose__card-right">
-                </div>
-            </div>
+                    <a href="https://odobrim.ru/refinance" class="choose__link" target="_blank"></a>
+                </li>
+            </ul>
        </section>
-        
 
         <section class="partners">
             <h2 class="section__title"><span class="greenmile">Партнёры</span>&nbsp;Одобрим.ру</h2>
-          
                 <div class="row">
                     <div class="large-12 columns">
-                        <div class="owl-carousel partners__slider">
-                            <div class="partners__item">
+                        <ul class="owl-carousel partners__slider">
+                            <li class="partners__item">
                                 <img src="./images/partners__1.png" alt="Альфабанк" class="partners__icon">
                                 <p class="partners__text">Альфабанк</p>
-                            </div>
-                            <div class="partners__item">
+                            </li>
+                            <li class="partners__item">
                                 <img src="./images/partners__2.png" alt="Тинькофф банк" class="partners__icon">
                                 <p class="partners__text">Тинькофф банк</p>
-                            </div>
-                            <div class="partners__item">
+                            </li>
+                            <li class="partners__item">
                                 <img src="./images/partners__3.png" alt="Банк Восточный" class="partners__icon">
                                 <p class="partners__text">Банк Восточный</p>
-                            </div>
-                            <div class="partners__item">
+                            </li>
+                            <li class="partners__item">
                                 <img src="./images/partners__4.png" alt="Райффайзен банк" class="partners__icon">
                                 <p class="partners__text">Райффайзен банк</p>
-                            </div>
-                            <div class="partners__item">
+                            </li>
+                            <li class="partners__item">
                                 <img src="./images/partners__5.png" alt="Росбанк" class="partners__icon">
                                 <p class="partners__text">Росбанк</p>
-                            </div>
-                            <div class="partners__item">
+                            </li>
+                            <li class="partners__item">
                                 <img src="./images/partners__6.png" alt="ОТП банк" class="partners__icon">
                                 <p class="partners__text">ОТП банк</p>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
         </section>
@@ -249,17 +254,16 @@
                      финансовой услуги третьих лиц.<br>
         
                     При использовании материалов гиперссылка на odobrim.ru обязательна.</p>
-                <nav class="footer__nav">
-                    <p class="footer__links">
+                <nav class="footer__links">
                         <a href="#" class="footer__link">Политика конфиденциальности</a><span>&emsp;|&emsp;</span>
                         <a href="#" class="footer__link">Соглашение об использовании сайта</a><span>&emsp;|&emsp;</span>
                         <a href="#" class="footer__link">Правила оказания услуг</a><span>&emsp;|&emsp;</span>
                         <a href="#" class="footer__link">Согласие для зарегистрированного пользователя</a><span>&emsp;|&emsp;</span>
                         <a href="#" class="footer__link">Реквизиты</a>
-                    </p>
                 </nav>
             </div>
         </footer>
+
     </div>
    
 

@@ -100,4 +100,8 @@
         display: none;
     }
 
+    .header__text {
+        margin-top: 0;
+    }
+
 }
